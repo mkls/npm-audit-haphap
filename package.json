@@ -1,0 +1,25 @@
+{
+  "name": "npm-audit-haphap",
+  "version": "1.0.0",
+  "description": "return clean npm audit report when npm is not available",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"haphap\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkls/npm-audit-haphap.git"
+  },
+  "keywords": [
+    "npm",
+    "audit",
+    "retry",
+    "fallback"
+  ],
+  "author": "mkls",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkls/npm-audit-haphap/issues"
+  },
+  "homepage": "https://github.com/mkls/npm-audit-haphap#readme"
+}

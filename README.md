@@ -1,6 +1,6 @@
 # npm-audit-haphap
 
-Are you also tired of getting "Your configured registry (${opts.registry}) does not support audit requests."
+Are you also tired of getting "Your configured registry (https://registry.npmjs.org/) does not support audit requests."
 errors from npm audit every now and then?
 
 Don't worry, just switch your npm audit npm script from

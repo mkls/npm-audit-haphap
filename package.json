@@ -1,6 +1,6 @@
 {
   "name": "npm-audit-haphap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "return clean npm audit report when npm is not available",
   "bin": "index.js",
   "scripts": {

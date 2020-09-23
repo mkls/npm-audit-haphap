@@ -1,6 +1,6 @@
 {
   "name": "npm-audit-haphap",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "return clean npm audit report when npm is not available",
   "bin": "index.js",
   "scripts": {
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/mkls/npm-audit-haphap/issues"
   },
-  "homepage": "https://github.com/mkls/npm-audit-haphap#readme"
+  "homepage": "https://github.com/mkls/npm-audit-haphap#readme",
+  "dependencies": {
+    "rc": "^1.2.8"
+  }
 }

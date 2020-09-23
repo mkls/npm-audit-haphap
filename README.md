@@ -13,3 +13,25 @@ to:
 
 And your builds won't break any longer on a flaky audit step. Audit-haphap will return a clean audit report when npm is
 not available.
+
+## Validate with exception filtering
+
+You can also check if you have any unresolved advisories running:
+
+`npm-audit-haphap --validate-with-filter`
+
+Should remaining advisories be found, it exits with error code 1.
+
+It also reads your `.nsprc` file for exceptions, so you can exclude advisories until you solve them:
+
+Example `.nsprc` file:
+```
+{
+  "exceptions": [
+    "https://npmjs.com/advisories/1523",
+    "https://npmjs.com/advisories/1556"
+  ]
+}
+```
+
+

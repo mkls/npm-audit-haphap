@@ -28,15 +28,15 @@ const handleValidation = (auditReport) => {
   const filteredAdvisories = Object.values(auditReport.advisories).filter(
     advisory => !nspConfig.exceptions.includes(advisory.url)
   );
-  const isRemainingAdvisories = filteredAdvisories.length > 0;
-  if (isRemainingAdvisories) {
+  const hasRemainingAdvisories = filteredAdvisories.length > 0;
+  if (hasRemainingAdvisories) {
     console.error('Unfiltered advisories found, please check `npm audit`:');
     filteredAdvisories.map(advisory => advisory.url).forEach(url => console.log(`  - ${url}`));
   } else {
     console.log('No unfiltered advisories found');
   }
   console.log('');
-  return isRemainingAdvisories;
+  return hasRemainingAdvisories;
 };
 
 const cleanAuditReport = {

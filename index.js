@@ -25,7 +25,8 @@ exec('npm audit --json', (error, stdout, stderr) => {
 });
 
 const handleValidation = (auditReport) => {
-  const filteredAdvisories = Object.values(auditReport.advisories).filter(
+  const advisories = auditReport.advisories || auditReport.vulnerabilities;
+  const filteredAdvisories = Object.values(advisories).filter(
     advisory => !nspConfig.exceptions.includes(advisory.url)
   );
   const hasRemainingAdvisories = filteredAdvisories.length > 0;
